@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+.container{
+    width: 100%;
+    height: auto;
+}
+
+.childContainer{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.child{
+    width: 10%;
+    height: 114px;
+    border: 1px solid black;
+    /*animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation
+    */
+
+    transition: background 1s;
+}
+
+@keyframes borderColorChange {
+    from{
+        border-color: black;
+    }to{
+        border-color: white;
+    }
+}
+
+
+@keyframes colorChange {
+    from{
+        border: none;
+    }to{
+        border: 1px solid white;
+    }
+}
